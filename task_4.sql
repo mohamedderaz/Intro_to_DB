@@ -9,7 +9,7 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = DATABASE()  -- هنا بنستخدم DATABASE() لأنها هتاخد الديتابيس اللي جي من argument mysql
+    TABLE_SCHEMA = DATABASE('alx_book_store')  -- هنا بنستخدم DATABASE() لأنها هتاخد الديتابيس اللي جي من argument mysql
     AND TABLE_NAME = 'books'
 ORDER BY 
     ORDINAL_POSITION;
